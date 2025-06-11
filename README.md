@@ -50,19 +50,6 @@ SMTP credentials and message details are stored in package variables (e.g. `SMTP
 
 ---
 
-## 📸 Screenshots
-
-Add the following screenshots to your GitHub repo:
-
-1. `![Control Flow](https://github.com/user-attachments/assets/be86e7be-f22b-41dc-a13c-9f9e94b6c344)
-` – The full control flow view
-2. `![Success Mail Notification](https://github.com/user-attachments/assets/95fe7025-c199-483f-b1da-5bd78306595b)
-` – Example of the success notification
-3. `![Log File of Scheduling in SQL Server Agent](https://github.com/user-attachments/assets/7fb64852-13a5-4db6-9814-3d893e343708)
-` – Job Logs in SQL Agent screenshot
-
----
-
 ## 🗓 Scheduling
 
 The package is deployed and scheduled via **SQL Server Agent**, running daily at a specific time to keep destination tables up to date.
