@@ -26,20 +26,19 @@ The project includes:
 
 ## 🧱 Project Structure
 
-### 1️⃣ SEQ\_TruncateTables
+## 1️⃣ SEQ_Truncate_Destination_Tables
+    Contains a TRUNCATE Destination Tables task to clear the data in destination tables before loading new data.
 
-Truncates all destination tables before loading new data to ensure data consistency.
+## 2️⃣ SEQ_Load_Dimensions
+    Loads dimension data such as Customer and Product tables.
 
-### 2️⃣ SEQ\_LoadData
+## 3️⃣ SEQ_Load_Fact
+    Loads Sales Data into the fact table after dimensions are successfully loaded.
 
-Runs the Data Flow tasks to extract, transform, and load data into the destination tables.
+## 4️⃣ SEQ_Notifications
+    Contains the Mail_OnSuccess task to send an email notification upon successful execution of the package.
 
-### 3️⃣ SEQ\_Notifications
-
-Sends email notification upon successful completion of the package.
-
-> 🔧 Failure notification is handled via the SSIS `Event Handler` for the package.
-
+    ⚠️ Failure notifications are handled using the Event Handler tab in SSIS.
 ---
 
 ## 🔔 Email Notification Logic
@@ -55,9 +54,12 @@ SMTP credentials and message details are stored in package variables (e.g. `SMTP
 
 Add the following screenshots to your GitHub repo:
 
-1. `ControlFlow.png` – The full control flow view
-2. `SuccessEmail.png` – Example of the success notification
-3. `SQLAgentJob.png` – Job configuration screenshot
+1. `![Control Flow](https://github.com/user-attachments/assets/be86e7be-f22b-41dc-a13c-9f9e94b6c344)
+` – The full control flow view
+2. `![Success Mail Notification](https://github.com/user-attachments/assets/95fe7025-c199-483f-b1da-5bd78306595b)
+` – Example of the success notification
+3. `![Log File of Scheduling in SQL Server Agent](https://github.com/user-attachments/assets/7fb64852-13a5-4db6-9814-3d893e343708)
+` – Job Logs in SQL Agent screenshot
 
 ---
 
